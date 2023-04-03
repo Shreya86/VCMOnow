@@ -325,6 +325,10 @@ h6 {
     left: 0%;
     height: auto;
   }
+  #hero {
+    height: 80vh;
+    text-align: center;
+  }
   
 }
 
@@ -499,67 +503,6 @@ section {
   }
   }
 
- 
-
-
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.padd-top{
-  padding-top: 80px;
-}
-
-.section-bg {
-  background-color: #f5f6f7;
-}
-
-.section-header {
-  text-align: center;
-  padding-bottom: 70px;
-}
-
-.section-header h2 {
-  font-size: 32px;
-  font-weight: 700;
-  position: relative;
-  color: #2e3135;
-}
-
-.color-white{
-  color: #fff!important;
-}
-
-.section-header h2:before,
-.section-header h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: #ffc451;
-  display: inline-block;
-}
-
-.section-header h2:before {
-  margin: 0 15px 10px 0;
-}
-
-.section-header h2:after {
-  margin: 0 0 10px 15px;
-}
-
-.section-header p {
-  margin: 0 auto 0 auto;
-}
-
-@media (min-width: 1199px) {
-  .section-header p {
-    max-width: 60%;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -937,7 +880,7 @@ section {
 # Sections Clients testimonilas
 --------------------------------------------------------------*/
 #testimonial {
-  height: 70vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -980,6 +923,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
+  margin-bottom: 10%;
 }
 
 /* swiper button css */
@@ -1009,14 +953,14 @@ section {
 
 @media (max-width: 992px) {
   #testimonial {
-    height: 60vh;
+    height: auto;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   #testimonial {
-    height: 57vh;
+    height: auto;
     width: 100%;
   }
   .slide p {
@@ -1024,6 +968,9 @@ section {
   }
   .nav-btn {
     display: none;
+  }
+  .slide p {
+    margin-bottom: 10%;
   }
 }
 
