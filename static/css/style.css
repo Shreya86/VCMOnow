@@ -29,6 +29,9 @@ h6 {
   font-family: 'Lato', sans-serif;
 }
 
+.link{
+  color: #137EBA!important;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -112,6 +115,7 @@ h6 {
     left: -100%;
   }
 }
+
 
 /**
 * Mobile Navigation 
@@ -223,7 +227,6 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -307,21 +310,22 @@ h6 {
   }
 
   #hero .hero-img img {
-    width: 70%;
+    width: 80%;
     /* top: 95%; */
   }
 }
 
 @media (max-width: 575px) {
-  #hero .hero-img {
+  
+  .hero_img{
+    /* position: absolute;
+    z-index: 11; */
+    top:74%;
     width: 100%;
-    top: 80px!important;
+    left: 0%;
+    height: auto;
   }
-  #hero {
-    height: 80vh;
-    text-align: center;
-  }
- 
+  
 }
 
 @-webkit-keyframes up-down {
@@ -390,6 +394,12 @@ section {
   margin-bottom: 0;
 }
 
+@media (max-width: 575px) {
+  .section-title {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  }
 
 /*--------------------------------------------------------------
 # Sections Clients
@@ -479,13 +489,13 @@ section {
 
 @media (max-width: 768px) {
   #client{
-    padding-top: 15%;
+    padding-top: 8%;
   }
 }
 
 @media (max-width: 575px) {
   #client{
-    padding-top: 10%;
+    padding-top: 5%;
   }
   }
 
@@ -996,9 +1006,17 @@ section {
 .swiper-pagination-bullet-active {
   background-color: #FFC13D!important;
 }
+
+@media (max-width: 992px) {
+  #testimonial {
+    height: 60vh;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #testimonial {
-    height: 70vh;
+    height: 57vh;
     width: 100%;
   }
   .slide p {
@@ -1016,8 +1034,8 @@ section {
 
 #getin{
   background: #FFC13D;
-  height: 20vh;
-  padding: 35px 0;
+  /* height: 20vh;
+  padding: 35px 0; */
   
 }
 #getin h3{
@@ -1049,7 +1067,9 @@ section {
   padding: 10px 20px;
 }
 
-
+.modal-body{
+  text-align: justify;
+}
 
 /*--------------------------------------------------------------
 # FOOTER
